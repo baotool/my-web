@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang=en>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel=stylesheet>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Tool Slover Captcha | Backsec Roblox | Ugphone</title>
+<link rel=stylesheet href=styles/styles.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css>
+<link rel=icon type=image/x-icon href=./assets/favico/default.ico>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel=stylesheet>
+<script src=https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js></script>
+<link rel=stylesheet href=styles/tilt-effect.css>
+<style>#blurred-box{padding:20px 20px 15px 20px!important}#profile-picture{margin-bottom:5px!important}#username-container{margin:0 0 8px 0!important}.badges-container{margin:0 0 12px 0!important}.discord-widget{margin:5px auto 10px auto!important}.features-container{margin:5px 0 10px 0!important}.lang-container{margin:5px 0 0 0!important}.links{margin-top:12px!important}.sub-product-btn{transition:all .3s ease}.sub-product-btn:hover{transform:translateY(-1px);filter:brightness(1.1)}.category-buttons{display:flex;gap:6px;justify-content:center;margin-bottom:15px;flex-wrap:nowrap}.cat-btn{white-space:nowrap;font-size:11px!important;padding:5px 10px!important}</style>
+</head>
+<body>
+<div id=terminal>
+<div id=terminal-header>
+<div id=terminal-buttons>
+<div class=terminal-button id=close-button></div>
+<div class=terminal-button id=minimize-button></div>
+<div class=terminal-button id=maximize-button></div>
+</div>
+</div>
+<div id=terminal-content>
+<p id=terminal-text></p>
+</div>
+</div>
+<div id=video-background>
+<video autoplay muted loop playsinline webkit-playsinline tabindex=-1 id=myVideo>
+<source src="./assets/back/oshi no ko.mp4" type=video/mp4>
+</video>
+</div>
+<div id=audio-background>
+<div id=music-controls></div>
+</div>
+<div id=video-overlay></div>
+<div id=blurred-box class=tilt-element>
+<img id=profile-picture src=assets/kaka3.png alt="Profile Picture">
+<img id=avatar-frame src="" alt="Avatar Frame">
+<p id=username-container style="color:#fff;font-weight:700;font-size:32px;margin:0 0 8px 0">
+<span id=username>CODER IN 2026</span>
+<span id=typing-cursor>|</span>
+</p>
+<div class=badges-container style="margin:0 0 12px 0">
+<img src=assets/developer.png alt="dev badge">
+<img src=assets/love.png alt="heart badge">
+<img src=assets/music.png alt="music badge">
+</div>
+<div class=discord-widget style="background:rgba(0,0,0,.5);backdrop-filter:blur(10px);border-radius:16px;padding:12px;text-align:center;max-width:400px;margin:5px auto 10px auto">
+<div class=category-buttons>
+<button id=cat-slover class="cat-btn active" style="background:#fff;border:none;padding:5px 10px;border-radius:30px;color:#000;font-weight:700;cursor:pointer;font-size:11px">
+🔧 Slover Captcha
+</button>
+<button id=cat-backsec class=cat-btn style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);padding:5px 10px;border-radius:30px;color:#fff;font-weight:700;cursor:pointer;font-size:11px">
+🛡️ Backsec Roblox
+</button>
+<button id=cat-ugphone class=cat-btn style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);padding:5px 10px;border-radius:30px;color:#fff;font-weight:700;cursor:pointer;font-size:11px">
+📱 Tool Ugphone
+</button>
+</div>
+<div id=slover-options style=display:block>
+<div style=display:flex;gap:10px;justify-content:center;margin-bottom:12px>
+<button id=btn-lifetime class="price-btn active" style="background:#fff;border:none;padding:5px 14px;border-radius:30px;color:#000;font-weight:700;cursor:pointer;font-size:11px">
+LIFETIME
+</button>
+<button id=btn-month class=price-btn style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);padding:5px 14px;border-radius:30px;color:#fff;font-weight:700;cursor:pointer;font-size:11px">
+1 MONTH
+</button>
+</div>
+<div id=price-display style=font-size:28px;font-weight:700;color:#fff;margin-bottom:3px>
+$100
+</div>
+<div id=price-note style=color:#ccc;font-size:10px;margin-bottom:12px>
+LIFETIME
+</div>
+</div>
+<div id=backsec-options style=display:none>
+<div style=margin-bottom:12px>
+<div style=font-size:28px;font-weight:700;color:#fff;margin-bottom:3px>
+$150
+</div>
+<div style=color:#ccc;font-size:10px>
+LIFETIME • Bảo hành trọn đời
+</div>
+</div>
+</div>
+<div id=ugphone-options style=display:none>
+<div style=display:flex;gap:6px;justify-content:center;margin-bottom:12px;flex-wrap:wrap>
+<button id=sub-ugphone-manager class="sub-product-btn active" style="background:#fff;border:none;padding:4px 8px;border-radius:30px;color:#000;font-weight:700;cursor:pointer;font-size:9px">
+📱 Ugphone Manager
+</button>
+<button id=sub-buffkc class=sub-product-btn style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);padding:4px 8px;border-radius:30px;color:#fff;font-weight:700;cursor:pointer;font-size:9px">
+⚡ Tool Buff Kc
+</button>
+<button id=sub-regdata class=sub-product-btn style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);padding:4px 8px;border-radius:30px;color:#fff;font-weight:700;cursor:pointer;font-size:9px">
+📝 Tool Reg Data
+</button>
+</div>
+<div id=ugphone-price-display style=font-size:28px;font-weight:700;color:#fff;margin-bottom:3px>
+$7
+</div>
+<div id=ugphone-price-note style=color:#ccc;font-size:10px;margin-bottom:12px>
+Ugphone Manager
+</div>
+</div>
+<a href=https://discord.gg/8v2te2hnBn target=_blank id=buy-btn style="display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);color:#fff;padding:6px 14px;border-radius:40px;text-decoration:none;font-weight:700;font-size:12px">
+<i class="fab fa-discord" style=font-size:14px></i> Buy Here
+</a>
+</div>
+<div class=features-container style="background:rgba(0,0,0,.4);border-radius:12px;padding:12px;margin:5px 0 10px 0;text-align:left">
+<div id=features-list style=color:#fff;font-size:13px;line-height:1.5></div>
+</div>
+<div class=lang-container style="margin:5px 0 0 0">
+<img src=assets/python.png alt=python style=width:35px;height:35px>
+<img src=assets/vscode.png alt="visual studio code" style=width:35px;height:35px>
+</div>
+<div class=links style=margin-top:12px>
+<a href=https://discord.com/users/675897914123485184 target=_blank>
+<i class="fab fa-discord"></i>
+</a>
+</div>
+</div>
+<script data-cfasync=false src=scripts/email-decode.min.js></script>
+<script src=scripts/script.js></script>
+<script src=scripts/username-animation.js></script>
+<script src=scripts/tilt-effect.js></script>
+<script src=scripts/audio-visualizer.js></script>
+<script src=scripts/lanyard.js></script>
+<script src=scripts/discord.js></script>
+<script>const MUSIC_URL="https://cdn.pixabay.com/audio/2026/05/22/audio_05e32dd72e.mp3",bgMusic=new Audio(MUSIC_URL);bgMusic.volume=.3,bgMusic.loop=!0,bgMusic.currentTime=65;let musicStarted=!1;function startMusic(){musicStarted||(musicStarted=!0,bgMusic.play().catch((t=>console.log("Lỗi phát nhạc:",t))))}const checkInterval=setInterval((()=>{const t=document.getElementById("blurred-box");t&&"block"===t.style.display&&(clearInterval(checkInterval),startMusic())}),300);document.body.addEventListener("click",startMusic)</script>
+<script>const catSlover=document.getElementById("cat-slover"),catBacksec=document.getElementById("cat-backsec"),catUgphone=document.getElementById("cat-ugphone"),sloverOptions=document.getElementById("slover-options"),backsecOptions=document.getElementById("backsec-options"),ugphoneOptions=document.getElementById("ugphone-options"),subManager=document.getElementById("sub-ugphone-manager"),subBuffkc=document.getElementById("sub-buffkc"),subRegdata=document.getElementById("sub-regdata"),ugphonePriceDisplay=document.getElementById("ugphone-price-display"),ugphonePriceNote=document.getElementById("ugphone-price-note"),featuresList=document.getElementById("features-list"),btnLifetime=document.getElementById("btn-lifetime"),btnMonth=document.getElementById("btn-month"),priceDisplay=document.getElementById("price-display"),priceNote=document.getElementById("price-note"),featuresSlover='<div style="display: flex; flex-direction: column; gap: 8px;"><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Slover captcha 24/7, acc bị captcha là giải ngay</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Byass Inf captcha 100%</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Giao diện thao tác account đơn giản, dễ dùng cho newbie</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Version Browser hỗ trợ yescaptcha, omocaptcha</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Version API hỗ trợ CDS* (cần proxy)*</span></div></div>',featuresBacksec='<div style="display: flex; flex-direction: column; gap: 8px;"><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Generate Account ⇝ create account no request</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Bypass Cookie ⇝ refresh/bypass cookies</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Add Mail ⇝ link mail to your account</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Find Mail ⇝ find mail (Back Sec support)</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Send request back security</span></div></div>',featuresUgphoneManager='<div style="display: flex; flex-direction: column; gap: 8px;"><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Tool Quản Lý Ugphone Sll</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Kiểm tra thời gian tất cả thiết bị</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Auto đổi kc lấy thời gian thiết bị hàng loạt</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Auto gia hạn thiết bị hàng loạt</span></div></div>',featuresBuffkc='<div style="display: flex; flex-direction: column; gap: 8px;"><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Buff Kc qua api bên dịch vụ thứ 3</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Buff từ data nếu có tool Reg data acc</span></div></div>',featuresRegdata='<div style="display: flex; flex-direction: column; gap: 8px;"><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Auto mail + login</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Auto reg hàng loạt ko cần proxy, vpn</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Auto Buy máy trial 4h ugphone</span></div><div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #00b4d8; font-size: 14px;">●</span> <span style="color: #ddd; font-size: 13px;">Auto đổi dữ liệu sang code login f12</span></div></div>';function setActiveCategory(e){[catSlover,catBacksec,catUgphone].forEach((t=>{t===e?(t.style.background="white",t.style.color="black",t.style.border="none"):(t.style.background="rgba(255,255,255,0.2)",t.style.color="white",t.style.border="1px solid rgba(255,255,255,0.5)")}))}function setActiveSubProduct(e){[subManager,subBuffkc,subRegdata].forEach((t=>{t===e?(t.style.background="white",t.style.color="black",t.style.border="none"):(t.style.background="rgba(255,255,255,0.2)",t.style.color="white",t.style.border="1px solid rgba(255,255,255,0.5)")}))}function setActivePrice(e){[btnLifetime,btnMonth].forEach((t=>{t===e?(t.style.background="white",t.style.color="black",t.style.border="none"):(t.style.background="rgba(255,255,255,0.2)",t.style.color="white",t.style.border="1px solid rgba(255,255,255,0.5)")}))}catSlover.addEventListener("click",(()=>{setActiveCategory(catSlover),sloverOptions.style.display="block",backsecOptions.style.display="none",ugphoneOptions.style.display="none",featuresList.innerHTML=featuresSlover,setActivePrice(btnLifetime),priceDisplay.textContent="$100",priceNote.textContent="LIFETIME"})),catBacksec.addEventListener("click",(()=>{setActiveCategory(catBacksec),sloverOptions.style.display="none",backsecOptions.style.display="block",ugphoneOptions.style.display="none",featuresList.innerHTML=featuresBacksec})),catUgphone.addEventListener("click",(()=>{setActiveCategory(catUgphone),sloverOptions.style.display="none",backsecOptions.style.display="none",ugphoneOptions.style.display="block",setActiveSubProduct(subManager),ugphonePriceDisplay.textContent="$7",ugphonePriceNote.textContent="Ugphone Manager",featuresList.innerHTML=featuresUgphoneManager})),subManager.addEventListener("click",(()=>{setActiveSubProduct(subManager),ugphonePriceDisplay.textContent="$7",ugphonePriceNote.textContent="Ugphone Manager",featuresList.innerHTML=featuresUgphoneManager})),subBuffkc.addEventListener("click",(()=>{setActiveSubProduct(subBuffkc),ugphonePriceDisplay.textContent="$5",ugphonePriceNote.textContent="Tool Buff Kc",featuresList.innerHTML=featuresBuffkc})),subRegdata.addEventListener("click",(()=>{setActiveSubProduct(subRegdata),ugphonePriceDisplay.textContent="$70",ugphonePriceNote.textContent="Tool Reg Data",featuresList.innerHTML=featuresRegdata})),btnLifetime.addEventListener("click",(()=>{setActivePrice(btnLifetime),priceDisplay.textContent="$100",priceNote.textContent="LIFETIME"})),btnMonth.addEventListener("click",(()=>{setActivePrice(btnMonth),priceDisplay.textContent="$25",priceNote.textContent="1 MONTH"})),featuresList.innerHTML=featuresSlover</script>
+<style>#buy-btn:hover{transform:scale(1.03);background:#fff!important;color:#000!important;box-shadow:0 0 15px rgba(255,255,255,.4)}.cat-btn:hover,.price-btn:hover,.sub-product-btn:hover{transform:translateY(-1px);filter:brightness(1.1)}.features-container{max-height:180px;overflow-y:auto;scrollbar-width:thin}.features-container::-webkit-scrollbar{width:3px}.features-container::-webkit-scrollbar-track{background:rgba(255,255,255,.1);border-radius:10px}.features-container::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:10px}</style>
+<script>const ua=navigator.userAgent.toLowerCase(),isInApp=ua.includes("tiktok");isInApp&&document.body.classList.add("in-app")</script>
+</body>
+</html>
